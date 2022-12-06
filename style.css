@@ -1,44 +1,297 @@
 body{
      margin:0;
      padding:0;
-     
-}
-section{
-    display:flex;
-}
-.container {
-    text-align: center;
-    background-color: blue;
-    color: blanchedalmond;
-    padding:25px;
-   
-}
-.aside{
-    background-color:red;
-    width:15%;
-    color:white;
-    height: 400px;
-    margin: -1px;
-
+     color:#fff; 
+     height: 100vh;  
 }
 
-.aside > ul{
-    padding-top:20px;
+ul li {
+    font-size:x-large;
 }
-
-.aside ul >li{
-    font-size:xx-large;
+.header{
+display:flex;
+width:100%;
+flex-grow: initial;
 }
-.aside ol >li{
-    font-size:xx-large;
+#tittleD{
+    flex: 1;
+    margin-left: 20px;
+    font-size:x larger;
+    width: 70%;
+}
+nav{
+    flex:1;
+    line-height: 3;
+}
+nav a{
+    margin-left: 20px;
 }
 .main{
-    width:80%;
-    margin-left:20px;    
+    width:100%;
+   }
+   #experience{
+    width:100%;
+ height:600px;
+ display:flex;
+ background-image:url('img/backgrond.jpg');
+  background-size:contain ;
+}
+.halfContainer{
+   width:45%;
+   margin-top:50px;
+}
+.container {
+     background-color:black;
+    color: blanchedalmond;
+    padding:25px;    
+   
+}
+
+.container h1{
+    text-align: center;
+}
+.containerSection{
+    width:45%;
+    margin-top:50px;
+  
+}
+.containerSection h4{
+    margin-left:20px;
 }
 p{
     font-size:larger;
 }
 h4{
     font-size:x-large
+}
+.experienceDEV{
+ list-style: none;
+ margin-left:20px;
+}
+.experienceDEV li{
+    font-size: 21px;
+    line-height:2
+}
+
+
+
+#output{
+    margin-top:20px;
+    background-color:red;
+    color:#000;
+    height:50px;
+    display:none;
+    padding:10px;
+}
+a{
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+
+#hardwear{
+    height:auto;
+    color: black;
+    display:flex;  
+    
+}
+.secfirst{
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.secfirst >h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+#missionImg{
+    width: 50%;
+    height: fit-content;   
+    margin-left: 25%;
+    
+}
+.secsecond{
+    margin-top: 30px;
+    width: 45%;
+    margin-left: 20px;
+       
+}
+.secsecond >#imgCode{
+    width:50%;
+    height:fit-content;
+    margin-left: 200px;
+}
+.secsecond>h2{
+    text-align: center;
+}
+.appris{
+  list-style: none;
+  font-weight: bolder;
+}
+.mission{
+    font-size: x-large;
+}
+#adresse{
+    text-align: center;
+    font-weight: 900;
+}
+#agame_3D{
+width:25%;
+}
+
+/*les deux boite */
+.box{
+    width:50%;
+    margin-left:100px;
+    text-align: center;
+    border:2px solid #000;
+    background:linear-gradient(90deg, rgba(244,182,0,1) 26%, rgba(9,121,46,1) 50%, rgba(255,255,255,1) 87%);
+    color:#000;
+    border-radius:15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ }
+#logo{
+    width: 150px;
+    height: 150px;
+}
+
+    
+
+#softwear > h1{
+    text-align:center;
+
+}
+footer{
+    background-color: black;
+    height: auto;
+    margin:-20px 0px -30px 0px;
+    
+}
+.socialDiv{
+    text-align: center;
+    margin-bottom:10px;
+  }
+  .socialDiv >.fa{
+  font-size:xx-large;
+  margin-left: 10px;
+  margin-bottom:10px;
+  margin-top:-30px;
+  cursor:pointer;
+  }
+  .socialDiv >.fa:hover{
+    color:green;
+  }
+footer >p{
+    text-align:center;
+    color:white;  
+    line-height:4;
+}
+@media(max-width:768px){
+    .container h1 {
+        text-align: center;
+        font-size: medium;
+    }
+    .header {
+       flex-direction: column;
+    }
+    #tittleD {
+        width:100%;
+    }
+    #experience{
+        flex-direction: column;
+    }
+    .box{
+        width: 86%;
+        margin-left: 6%;
+    }
+    .halfContainer{
+        width: 100%;
+    }
+    #hardwear{
+        flex-direction: column;
+        margin-top: 260px;
+
+        
+    }
+    .containerSection {
+        width: 100%;
+        margin-top: 50px;
+        height: 600px;
+    }
+    
+     .containerSection > h2{
+        font-size: medium;
+        text-align: center;
+     }
+
+
+    .containerSection h4 {
+        margin-left: 20px;
+        text-align: center ;        
+        margin-top: 86px;
+        font-size: medium;
+    }
+    .experienceDEV {
+        margin-left: 0px;
+        color: #000;
+        margin-top:91px;
+    }
+    .experienceDEV > li {
+        font-size: large;
+        line-height: 2;
+    }
+    .secsecond{
+        color: #000;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .secsecond>h2 {
+        font-size:larger;
+    }
+    .secsecond >#imgCode{
+        width:89%;
+        height:fit-content;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .appris {
+        font-size: larger;
+        margin-bottom: 20px;
+    }
+    .secfirst{
+        width: 100%;
+        margin-top: 45px;
+    }
+    .secfirst >h2{
+        font-size:larger;
+        margin-right:21px;
+    }
+    #missionImg {
+        width: 89%;
+        /* height: fit-content; */
+         margin-left:0%;
+    }
+    .mission {
+        font-size:large;
+        margin-right: 24px;
+    }
+    ul li {
+        font-size:large;
+        margin-right: 21px;
+    }
+}
+@media(width:768px){
+    .experienceDEV > li {
+        font-size: 19px;
+      
+    }
+    .containerSection > h2 {
+        font-size: larger;
+     
+    }
+
 }
